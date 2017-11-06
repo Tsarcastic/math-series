@@ -1,36 +1,33 @@
-"""Get the nth number in a sequence."""
-
-
-"""Get the nth number in the Fibonacci Sequence"""
+"""Module will return the nth in both Fibonacci sequence and Lucas numbers."""
 
 
 def fibonacci(n):
+    """Function returns the nth number in the Fibonacci Sequence."""
     fibonacci_sequence = [0, 1]
-    #n = int(input('Which number in the Fibonacci Sequence?'))
     for x in range(0, n - 1):
         new = fibonacci_sequence[-2] + fibonacci_sequence[-1]
         fibonacci_sequence.append(new)
     return fibonacci_sequence[n - 1]
 
 
-"""Get the nth number in the Lucas Numbers"""
 def lucas(n):
+    """Get the nth number in the Lucas Numbers."""
     lucas_numbers = [2, 1]
-    #n = int(input('Which number in the Lucas Numbers?'))
     for x in range(0, n - 1):
         new = lucas_numbers[-2] + lucas_numbers[-1]
         lucas_numbers.append(new)
     return lucas_numbers[n - 1]
 
-"""Get the [value] number in a sequence of [first] and [second]."""
+
 def sum_series(val, first=0, second=1):
+    """Get the [value] number in a sequence of [first] and [second]."""
     series = [first, second]
     for x in range(0, val - 1):
         new = series[-2] + series[-1]
         series.append(new)
-    return series[val - 1]  
+    return series[val - 1]
 
-if __name__ == "__main__":
+if __name__ == "__main__":  #pragma no cover
     print("This module defines functions that implement")
     print("mathematical series.\n")
     print("fibonacci(n):")
