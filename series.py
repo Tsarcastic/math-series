@@ -1,8 +1,8 @@
-"""This module will return the nth in both Fibonacci sequence and Lucas numbers."""
+"""Module will return the nth in both Fibonacci sequence and Lucas numbers."""
 
 
 def fibonacci(n):
-    """This function returns the nth number in the Fibonacci Sequence."""
+    """Function returns the nth number in the Fibonacci Sequence."""
     fibonacci_sequence = [0, 1]
     for x in range(0, n - 1):
         new = fibonacci_sequence[-2] + fibonacci_sequence[-1]
