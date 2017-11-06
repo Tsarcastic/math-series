@@ -27,7 +27,7 @@ def sum_series(val, first=0, second=1):
         series.append(new)
     return series[val - 1]
 
-if __name__ == "__main__":
+if __name__ == "__main__":  #pragma no cover
     print("This module defines functions that implement")
     print("mathematical series.\n")
     print("fibonacci(n):")
